@@ -454,42 +454,46 @@ main{
                                     position: relative;
                                     width: 25%;
                                     height: 100%;
-                                    .imgBox{
+                                    .leftBox{
                                         position: absolute;
-                                        top: 15%;
+                                        top: 10%;
                                         left: 5%;
                                         width: 40%;
-                                        height: 15vw;
-                                        border-radius: 20px;
-                                        // background-color: #000;
+                                        height: 100%;
+                                        padding: 0 20px;
                                         display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        overflow: hidden;
-                                        img{
-                                            height: 100%;
+                                        flex-direction: column;
+                                        gap: 2vw;
+                                        .imgBox{
+                                            width: 100%;
+                                            height: 15vw;
                                             border-radius: 20px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            overflow: hidden;
+                                            img{
+                                                height: 100%;
+                                                border-radius: 20px;
+                                            }
                                         }
-                                    }
-                                    a{
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        width: 40%;
-                                        height: 3vw;
-                                        position: absolute;
-                                        top: 23vw;
-                                        left: 5%;
-                                        background-color: #6096ba;
-                                        border-radius: 20px;
-                                        cursor: pointer;
-                                        span{
-                                            font: 1.7vw/1 "맑은 고딕";
-                                            color: #fff;
-                                        }
-                                        &:hover{
-                                            background-color: #527aa7;
-                                            color: #e7ecef;
+                                        a{
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 100%;
+                                            height: 3vw;
+                                            background-color: #6096ba;
+                                            border-radius: 20px;
+                                            cursor: pointer;
+                                            span{
+                                                font: 1.7vw/1 "맑은 고딕";
+                                                color: #fff;
+                                            }
+                                            &:hover{
+                                                background-color: #527aa7;
+                                                color: #e7ecef;
+                                            }
                                         }
                                     }
                                     h2{
@@ -513,13 +517,13 @@ main{
                                         h3{
                                             font: bold 1.2vw/1 "맑은 고딕";
                                             color: #527aa7;
-                                            margin-bottom: 15px;
+                                            margin-bottom: 1vw;
                                             letter-spacing: -1px;
                                         }
                                         p{
                                             font: 1vw/1.4 "맑은 고딕";
                                             color: #555;
-                                            margin-bottom: 30px;
+                                            margin-bottom: 1.5vw;
                                             letter-spacing: 1px;
                                         }
                                     }
