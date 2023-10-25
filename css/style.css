@@ -1,0 +1,549 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+main header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 100vh;
+  background-color: #274c77;
+}
+main header > .imgBox {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 200px;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #527aa7;
+}
+main header > .imgBox img {
+  padding: 10px;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main header #gnb {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main header #gnb > .txtBox > span {
+  font: bold 20px/1 "맑은 고딕";
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.7;
+}
+main header #gnb > .txtBox > span.on {
+  color: #ddd;
+  opacity: 1;
+}
+main header #gnb > .txtBox > span:hover {
+  color: #ccc;
+}
+main > section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+}
+main > section > article {
+  width: 100%;
+  height: 100vh;
+  background-color: #e7ecef;
+  border-bottom: 1px solid #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section > article > .inner {
+  width: 80%;
+  height: 80%;
+}
+main > section > article.home {
+  padding: 15% 0px;
+}
+main > section > article.home > .inner h1 {
+  font: bold 80px/1 "Saira Extra Condensed";
+  letter-spacing: 1px;
+}
+main > section > article.home > .inner h1 .name {
+  color: #6096ba;
+}
+main > section > article.home > .inner h2 {
+  margin-top: 15px;
+  font: 24px/1 "맑은 고딕";
+  color: #555;
+  letter-spacing: -2px;
+}
+main > section > article.home > .inner > .txtBox {
+  margin-top: 30px;
+}
+main > section > article.home > .inner > .txtBox p {
+  margin-top: 15px;
+  font: 18px/1 "맑은 고딕";
+  letter-spacing: -2px;
+  color: #555;
+}
+main > section > article.home > .inner > .social_icons {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+main > section > article.home > .inner > .social_icons a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section > article.home > .inner > .social_icons a i {
+  font-size: 30px;
+  color: #ddd;
+}
+main > section > article.about > .inner {
+  padding: 20px 0;
+  position: relative;
+}
+main > section > article.about > .inner h1 {
+  font: bold 50px/1 "Saira Extra Condensed";
+  letter-spacing: -1px;
+}
+main > section > article.about > .inner > .conBox {
+  padding: 50px 10px;
+  display: flex;
+}
+main > section > article.about > .inner > .conBox .slide {
+  width: 450px;
+  height: 450px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  overflow: hidden;
+  transform: translate(0);
+}
+main > section > article.about > .inner > .conBox .slide > .imgBox {
+  width: 400%;
+  height: 100%;
+  transition: transform 1s;
+  display: flex;
+}
+main > section > article.about > .inner > .conBox .slide > .imgBox li {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section > article.about > .inner > .conBox .slide > .imgBox li img {
+  height: 100%;
+  object-fit: contain;
+}
+main > section > article.about > .inner > .conBox > .content > .txtBox {
+  padding: 20px 80px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main > section > article.about > .inner > .conBox > .content > .txtBox div {
+  display: flex;
+}
+main > section > article.about > .inner > .conBox > .content > .txtBox div dt {
+  width: 110px;
+  font: bold 20px/1 "맑은 고딕";
+  color: #6096ba;
+}
+main > section > article.about > .inner > .conBox > .content > .txtBox div dd {
+  font: 20px/1 "맑은 고딕";
+  color: #555;
+}
+main > section > article.about > .inner > .conBox > .content > .txtBox div dd span {
+  display: block;
+  margin-top: 10px;
+}
+main > section > article.about > .inner > .conBox > .content > .btnBox {
+  height: 50%;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main > section > article.about > .inner > .conBox > .content > .btnBox > .btn {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6096ba;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+main > section > article.about > .inner > .conBox > .content > .btnBox > .btn > .imgBox {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > section > article.about > .inner > .conBox > .content > .btnBox > .btn > .imgBox i {
+  font-size: 45px;
+  color: #fff;
+}
+main > section > article.about > .inner > .conBox > .content > .btnBox > .btn span {
+  font: 18px/1 "맑은 고딕";
+  color: #fff;
+}
+main > section > article.about > .inner > .conBox > .content > .btnBox > .btn:hover {
+  background-color: #a3cef1;
+}
+main > section > article.about > .inner > .conBox > .content > .btnBox > .btn:hover > .imgBox i {
+  color: #274c77;
+}
+main > section > article.about > .inner > .conBox > .content > .btnBox > .btn:hover span {
+  color: #274c77;
+}
+main > section > article.resume .inner {
+  padding: 20px 0;
+  position: relative;
+}
+main > section > article.resume .inner h1 {
+  font: bold 50px/1 "Saira Extra Condensed";
+  letter-spacing: -1px;
+}
+main > section > article.resume .inner .tab {
+  position: relative;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px 20px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.05);
+}
+main > section > article.resume .inner .tab.active .content {
+  margin: 10px 40px 0 40px;
+  padding: 10px;
+  height: auto;
+  transform: scaleY(1);
+}
+main > section > article.resume .inner .tab label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+main > section > article.resume .inner .tab label h2 {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+main > section > article.resume .inner .tab label h3 {
+  position: relative;
+  font-weight: 500;
+  color: #333;
+  z-index: 10;
+}
+main > section > article.resume .inner .tab label::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+}
+main > section > article.resume .inner .tab .content {
+  height: 0;
+  transform-origin: top center;
+  transform: scaleY(0);
+  transition: 0.5s;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  margin: 10px 40px 0 40px;
+  padding: 0 10px;
+}
+main > section > article.resume .inner .tab .content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main > section > article.resume .inner .tab .content ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 18px/1 "맑은 고딕";
+  letter-spacing: -1px;
+  color: #333;
+}
+main > section > article.resume .inner .tab .content ul li span {
+  font: 16px/1 "맑은 고딕";
+  color: #777;
+}
+main > section > article.resume .inner .tab .content .con h4 {
+  background-image: url(../img/promotion_dot.gif);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  padding-left: 10px;
+  color: bold 20px/1 "맑은 고딕";
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+}
+main > section > article.resume .inner .tab .content .con p {
+  padding-left: 30px;
+  padding: 10px 30px 10px;
+  font: 14px/1 "맑은 고딕";
+  color: #555;
+  letter-spacing: -1px;
+}
+main > section > article.resume .inner .tab .content .con p a {
+  color: inherit;
+}
+main > section > article.resume .inner .tab .content .con p a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+main > section > article.skills .inner {
+  padding: 20px 0;
+  position: relative;
+}
+main > section > article.skills .inner h1 {
+  font: bold 50px/1 "Saira Extra Condensed";
+  letter-spacing: -1px;
+}
+main > section > article.skills .inner > .con {
+  width: 90%;
+  height: calc(100% - 50px);
+  margin: 0 auto;
+}
+main > section > article.skills .inner > .con .bar {
+  width: 80%;
+  height: 75px;
+  margin: 20px auto;
+  position: relative;
+}
+main > section > article.skills .inner > .con .bar h5 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  font: normal 16px/1 "맑은 고딕";
+  letter-spacing: -1px;
+}
+main > section > article.skills .inner > .con .bar .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 35px;
+  background-color: #527aa7;
+  border-radius: 7px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #fff;
+}
+main > section > article.skills .inner > .con .bar .frame {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background-color: #ddd;
+  border-radius: 7px;
+}
+main > section > article.skills .inner > .con .bar .ex {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  overflow: hidden;
+  background-color: #e7ecef;
+  z-index: 2;
+  padding: 0 10px;
+}
+main > section > article.skills .inner > .con .bar .ex h6 {
+  margin-top: 10px;
+  font: bold 24px/1 "맑은 고딕";
+  color: #527aa7;
+  letter-spacing: -2px;
+}
+main > section > article.skills .inner > .con .bar .ex p {
+  padding: 0 20px;
+  font: normal 14px/1.6 "맑은 고딕";
+  letter-spacing: -1px;
+  color: #777;
+}
+main > section > article.skills .inner > .con .bar:hover .ex {
+  height: 100%;
+}
+main > section > article.projects .inner {
+  padding: 20px 0;
+  position: relative;
+}
+main > section > article.projects .inner h1 {
+  font: bold 50px/1 "Saira Extra Condensed";
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+}
+main > section > article.projects .inner > .con {
+  width: 90%;
+  height: calc(100% - 200px);
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px 5px #8b8c89;
+}
+main > section > article.projects .inner > .con .frame {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+main > section > article.projects .inner > .con .frame .panel {
+  width: 400%;
+  height: 100%;
+  display: flex;
+  transform: translateX(0%);
+  transition: 0.5s;
+}
+main > section > article.projects .inner > .con .frame .panel li {
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+main > section > article.projects .inner > .con .frame .panel li .imgBox {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 40%;
+  height: 15vw;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main > section > article.projects .inner > .con .frame .panel li .imgBox img {
+  height: 100%;
+  border-radius: 20px;
+}
+main > section > article.projects .inner > .con .frame .panel li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 10%;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  background-color: #6096ba;
+  border-radius: 20px;
+  cursor: pointer;
+}
+main > section > article.projects .inner > .con .frame .panel li a span {
+  font: 20px/1 "맑은 고딕";
+  color: #fff;
+}
+main > section > article.projects .inner > .con .frame .panel li a:hover {
+  background-color: #527aa7;
+  color: #e7ecef;
+}
+main > section > article.projects .inner > .con .frame .panel li h2 {
+  position: absolute;
+  top: 10%;
+  left: 47%;
+  width: 50%;
+  text-align: center;
+  font: bold 30px/1 "Saira Extra Condensed";
+  letter-spacing: 1px;
+}
+main > section > article.projects .inner > .con .frame .panel li > .txtBox {
+  width: 50%;
+  height: 70%;
+  position: absolute;
+  top: 20%;
+  left: 47%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+main > section > article.projects .inner > .con .frame .panel li > .txtBox h3 {
+  font: bold 22px/1 "맑은 고딕";
+  color: #527aa7;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+main > section > article.projects .inner > .con .frame .panel li > .txtBox p {
+  font: 18px/1.4 "맑은 고딕";
+  color: #555;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+main > section > article.projects .inner > .con .frame .prevBtn {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main > section > article.projects .inner > .con .frame .prevBtn:hover {
+  color: #555;
+}
+main > section > article.projects .inner > .con .frame .prevBtn i {
+  font-size: 30px;
+}
+main > section > article.projects .inner > .con .frame .nextBtn {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  transition: 0.5s;
+  cursor: pointer;
+}
+main > section > article.projects .inner > .con .frame .nextBtn:hover {
+  color: #555;
+}
+main > section > article.projects .inner > .con .frame .nextBtn i {
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
