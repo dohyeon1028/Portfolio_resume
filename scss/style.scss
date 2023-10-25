@@ -476,15 +476,15 @@ main{
                                         justify-content: center;
                                         align-items: center;
                                         width: 40%;
-                                        height: 10%;
+                                        height: 3vw;
                                         position: absolute;
-                                        top: 75%;
+                                        top: 23vw;
                                         left: 5%;
                                         background-color: #6096ba;
                                         border-radius: 20px;
                                         cursor: pointer;
                                         span{
-                                            font: 20px/1 "맑은 고딕";
+                                            font: 1.7vw/1 "맑은 고딕";
                                             color: #fff;
                                         }
                                         &:hover{
@@ -498,7 +498,7 @@ main{
                                         left: 47%;
                                         width: 50%;
                                         text-align: center;
-                                        font: bold 30px/1 "Saira Extra Condensed";
+                                        font: bold 2vw/1 "Saira Extra Condensed";
                                         letter-spacing: 1px;
                                     }
                                     > .txtBox{
@@ -511,13 +511,13 @@ main{
                                         display: flex;
                                         flex-direction: column;
                                         h3{
-                                            font: bold 22px/1 "맑은 고딕";
+                                            font: bold 1.2vw/1 "맑은 고딕";
                                             color: #527aa7;
                                             margin-bottom: 15px;
                                             letter-spacing: -1px;
                                         }
                                         p{
-                                            font: 18px/1.4 "맑은 고딕";
+                                            font: 1vw/1.4 "맑은 고딕";
                                             color: #555;
                                             margin-bottom: 30px;
                                             letter-spacing: 1px;
